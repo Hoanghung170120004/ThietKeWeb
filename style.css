@@ -1,0 +1,155 @@
+body {
+    margin:0;
+    font-family: 'Merriweather', serif;
+    background-color: #000000;
+    color: #6B240C;
+}
+h1{
+    font-size: 60px;
+}
+#bar ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background: #6B240C;
+    position: fixed;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    top: -30px;
+}
+
+#bar li a {
+  display: block;
+  color: #F5CCA0;
+  font-size: 25px;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+#bar li a:hover{
+  background-color: #994D1C;
+  font-size: 25px;
+}
+#bar{
+    position: relative;
+    z-index: 100;
+}
+#home{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+#home1{
+    background-image: url(Ảnh\ trang.png);
+    background-size: cover;
+    background-position: center;
+    margin: 50px 20px;
+    width: 100%;
+    height: 800px;
+}
+#abt{
+    background-color: #F5CCA0;
+    margin: 70px 20px 0 20px;
+    width: calc(100% - 40px);
+    position: relative;
+}
+#homework{
+    background-image: url(https://www.topalski.com/wp-content/uploads/2016/06/Fine-Art-Distant-Mountains-Original-Oil-Original-Painting-artwork-on-Canvas-by-artist-Darko-Topalski-gallery-arts.jpg);
+    background-size: cover;
+    background-color: #F5CCA0;
+    margin: 0 20px;
+    height: auto;
+    width: calc(100% - 40px);
+    position: relative;
+    padding: 20px 0 0 0;
+}
+.blur{
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.2px);
+    -webkit-backdrop-filter: blur(11.2px);
+    color: #994D1C;
+}
+.back {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #00000000;
+    padding: 0 20px;
+}
+.col{
+    background-color: #00000000;
+    height: auto;
+    flex-grow: 1;
+    padding:  0 6vw;
+}
+ul{
+    font-size: 30px;
+    display: inline-block;
+    width: 200px;
+}
+ul li a{
+    font-size: 20px;
+    display: inline-block;
+}
+ul li a:link, ul li a:visited{
+    text-decoration: none;
+    color: #000000;
+}
+ul li a:hover{
+    text-decoration: none;
+    font-size: 24px;
+}
+#contact{
+    background-color: #6B240C;
+    color: #F5CCA0;
+    margin: 20px 20px;
+    height: auto;
+    width: calc(100% - 40px);
+    position: relative;
+}
+#media{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.medi{
+    display: block;
+    max-width: 250px;
+    background-color: #00000000;
+    height: 20px;
+    flex-grow: 1;
+    padding: 0 0 40px 0;
+    text-align: center;
+}
+.medi a{
+    font-size: 20px;
+    display: inline-block;
+}
+.medi a:link, .medi a:visited{
+    text-decoration: none;
+    color: #F5CCA0;
+}
+.medi a:hover{
+    text-decoration: none;
+    font-size: 24px;
+}
+@media screen and (max-width: 800px) {
+    #bar li a {
+        padding: 14px 10px;
+    }
+    .back {
+        flex-direction: column;
+    }
+    #media{
+        flex-direction: column;
+    }
+    .medi{
+        padding: 20px;
+    }
+}
