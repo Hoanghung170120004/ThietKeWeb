@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+}
+body{
+    background-color: #F5CCA0;
+    color: #6B240C;
+
+}
+html {
+    --thumbBG: #F5CCA0;
+    --scrollbarBG: #E48F45;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+}
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+div.sos{
+    position: sticky;
+    z-index: 1;
+}
+div.bar{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    /* transform: translate(-20%,0); */
+}
+.barr{
+    justify-content: center;
+    align-items: center;
+    transform: translate(50%,0);
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+    width: 40px;
+}
+.bar1, .bar2{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+.barr1, .bar2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+.bar1, .bar2{
+    transform: rotate(-90deg) translate(0%,10%);
+}
+.bar2{
+    transform: rotate(-90deg) translate(0%,-30%);
+}
+.barr:hover .bar1{
+    transform: rotate(-90deg) translate(0%, 50%);
+}
+.barr:hover .bar2{
+    transform: rotate(-90deg) translate(0%, 10%);
+}
+.barr:hover:hover{
+    background-color: #6B240C;
+    color: #F5CCA0;
+}
+ul.sidenav li a:hover{
+    color: #F5CCA0;
+}
+ul.sidenav {
+    list-style-type: none;
+    width: 60px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}  
+ul.sidenav li a {
+    color: #994D1C;
+    text-decoration: none;
+}
+#home{
+    width: 1200px;
+    display: flex;
+    position: relative;
+    margin:0 calc((100% - 1200px)/2);
+}
+#home1{
+    width: 60%;
+    height: 100vh;
+    margin-top: 30px;
+}
+#hm11{
+    background-color: #F5CCA0;
+    background-image: url(11111.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    border-radius: 200px 0 100px 0;
+    margin-bottom: 10px;
+}
+#hm11 img{
+    width: 100%;
+    align-items: center;
+}
+#home2{
+    background-image: url(https://www.topalski.com/wp-content/uploads/2016/06/Fine-Art-Distant-Mountains-Original-Oil-Original-Painting-artwork-on-Canvas-by-artist-Darko-Topalski-gallery-arts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #E48F45;
+    width: calc(100% - 60% - 10px);
+    height: 100vh;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#hm2{
+    width: calc(40% - 10px);
+    background-color: #F5CCA0;
+    position: absolute;
+    border-radius: 235px 235px 0 0;
+    bottom: 0;
+    transform: translate(0,10%);
+}
+#imgcircle{
+    border: 10px solid #F5CCA0;
+    margin-left: -10px;
+    width: calc(100% -10px);
+    border-radius: 50%;
+    background-color: #F5CCA0;
+    position: relative;
+    overflow: hidden;
+}
+.anh{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 1;
+}
+.bo, .lop1, .lop2, .lop3{
+    width: 100%;
+    padding-bottom: 100%;
+}
+.bo{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.bo .lop1, .anh{
+    top:0;
+    left:0;
+    position: absolute;
+}
+.bo .lop2{
+    opacity: 0.5;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: black;
+}
+.bo .lop3{
+    position: absolute;
+    opacity:1;
+}
+.anh {
+    position: relative;
+    animation-name: xoaydeuxoaydeu;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes xoaydeuxoaydeu {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(90deg);}
+    50%  {transform: rotate(180deg);}
+    75%  {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+#abt{
+    width: 100%;
+    margin-top: 80px;
+}
+.mySlides {
+    display:none;
+} 
+.container{
+    width: 550px;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    margin: 160px 0 160px 160px;
+}
+.displaycontainer{
+    position:relative;
+}
+.button{
+    font-size: 48px;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0 12px 5px 12px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #00000000;
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover{
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+.left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+}
+.right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+}
+.text{
+    position: absolute;
+    right: 200px;
+    top: 130vh;
+    height: 200px;
+    width: 30vw;
+    background-color: #6B240C;
+}
+.text1{
+    position: absolute;
+    right: 100px;
+    top: 160vh;
+    height: 200px;
+    width: 30vw;
+    background-color: #994D1C;
+}
+.textabt{
+    color: #F5CCA0;
+}
+#hmw{
+    width: 100%;
+}
+.baitaptext{
+    position: relative;
+    overflow: hidden;
+    padding-left: 80px;
+    display: flex;
+    padding-top: 80px;
+}
+.txtbt{
+    padding-right: 20vw;
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 94px;
+    font-family: 'Archivo', sans-serif;
+    color: #6B240C;
+    transition: 2s all ease;
+}  
+.txtbt.active{
+    padding-right: 0vw;
+}
+.hmwork{
+    width: 1050px;
+    margin: 80px calc((100% - 1090px)/2);
+    padding: 0px 20px;
+    border: solid 1px #994D1C;
+}
+.hmw1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.hmw2{
+    width: 150px;
+    height: auto;    
+    position: relative;
+    overflow: hidden;
+}
+.lab{
+    display: flex;
+    width: 210px;
+}
+.hmw3{
+    width: 900px;
+    height: 40px;
+    display: flex;
+}
+.hmw4{
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+a:link, a:visited, .lab{
+    text-decoration: none;
+    color: #994D1C;
+}
+.bt{
+    transition: 1s all ease;
+    transform: translate(150px,0);
+    display: flex;
+}
+.hmw41, .hmw42{
+    width: 70px;
+}
+.bt.active{
+    transform: translate(-70px);
+}
+.hmw4:hover{
+    background-color: #E48F45;
+    transition: 0.4s all ease;
+}
+
+#ct{
+    background-color: royalblue;
+    height: 100vh;
+    width: 100%;
+}

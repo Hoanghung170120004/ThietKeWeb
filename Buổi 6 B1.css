@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    transition: 0.4s;
+}
+body{
+    margin: 50px calc((100% - 420px)/2);
+}
+div input{
+    padding: 5px 10px;
+    cursor: pointer;
+}
